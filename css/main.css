@@ -101,4 +101,111 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: calc(31/26);
+  letter-spacing: 0.03em;
+  color: var(--act-color);
+}
+
+.logo__text--black {
+  color: var(--main-color);
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.logo__text--white {
+  color: var(--prim-white-background);
+}
+
+.site-nav,
+.site-nav__links,
+.auth-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition-property: color, fill;
+  transition-property: color, fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auth-nav__links,
+.site-nav__links li a {
+  margin-right: 50px;
+  display: inline-block;
+  padding: 30.5px 0;
+  color: var(--main-color);
+  font-weight: 500;
+  line-height: calc(16/14);
+  letter-spacing: 0.02em;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav__links li:last-child a {
+  margin-right: 0px;
+}
+
+.auth-nav__links {
+  margin: 0 0 0 50px;
+  color: var(--sec-color);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auth-nav__links:hover,
+.auth-nav__links:focus,
+.site-nav__links li a:focus,
+.site-nav__links li a:hover {
+  color: var(--act-color);
+}
+
+.auth-nav__img--wider {
+  width: 16px;
+  height: 12px;
+}
+
+.auth-nav__img--higher {
+  width: 10px;
+  height: 16px;
+}
+
+.auth-nav__img {
+  fill: currentColor;
+}
+
+.site-nav__item--active {
+  position: relative;
+}
+
+.site-nav__item--active::after {
+  position: absolute;
+  bottom: -1px;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--act-color);
+  border-radius: 2px;
 }/*# sourceMappingURL=main.css.map */
