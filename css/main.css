@@ -857,9 +857,7 @@ h3.team__title {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clients__link:focus,
-.clients__link:hover {
+.clients__link:focus, .clients__link:hover {
   fill: #2196f3;
   border: 1px solid #2196f3;
 }

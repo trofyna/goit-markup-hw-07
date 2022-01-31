@@ -37,11 +37,10 @@
     transition-property: fill, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-  }
-
-.clients__link:focus,
-.clients__link:hover {
+&:focus,
+&:hover {
   fill: #2196f3;
   border: 1px solid #2196f3;
+}
+
 }
