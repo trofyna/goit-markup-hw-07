@@ -1,82 +1,16 @@
 /* ===============RESET styles 🧐 starts here========== */
-*,
-*::after,
-*::before {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-a {
-    text-decoration: none;
-    cursor: pointer;
-}
-
-ul, li {
-    list-style: none;
-}
-
-button {
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
-    transition-property: background-color, color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
-}
 
 /* ===============RESET styles 🧐 ends here========== */
 
 
 
-:root {
-    /* color for main-PRIMARY TEXT */
-    --main-color: #212121;
-    /* color for SECONDARY TEXT */
-    --sec-color: #757575;
-     /* color for SELECTION -ACCENT TEXT */
-    --act-color: #2196F3;
-/* color for BLACK backgroud*/
-    --prim-white-background: #FFFFFF;
-    --sec-grey-background-color: #E5E5E5;
-    --thir-grey-white-background: #F5F4FA;
-
-}
-body{
-    background-color: var(--prim-white-background);
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-size: 14px;
-    color: #050303;
-}
-.section {
-    padding-top: 94px;
-}
-
-.container {
-    padding: 0 15px;
-    width: 1200px;
-    outline: 1px solid red;
-    margin: 0 auto;
-}
-
-.hedden-elem {
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    opacity: 0;
-    margin-top: -1px;
-}
-
-img {
-    display: block;
-}
 /* ===============Header styles 🧐 starts here========== */
 
 .site-nav,
 .site-nav__links,
-.auth-nav,
-.page-header .container {
+.auth-nav
+{
     display: flex;
     justify-content: space-between;
     transition-property: color, fill;
@@ -84,14 +18,6 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.page-header{
-    border-bottom: 1px solid #ececec;
-}
-.page-header .logo {
-    margin-right: 93px;
-    display: flex;
-    align-items: center;
-}
 
 .logo {
     font-family: "Raleway", sans-serif;
